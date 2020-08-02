@@ -47,7 +47,7 @@ def main():
 
 		# convert file
 		csv_name = name[:-5] + '.csv'
-		output = open(csv_name, 'w', encoding='utf-8')
+		output = open(csv_name, 'w', newline='', encoding='utf-8')
 		csvwriter = csv.writer(output)
 		count = 0
 		for dat in data:
